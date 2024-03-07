@@ -132,7 +132,7 @@ function FooterPart() {
                             LOGO
                         </Typography>
                         <Box gap={10} sx={{ flexGrow: 1, textUnderlinePosition: "auto", display: { xs: 'none', md: 'flex' } }}>
-                            <Link href="/main"  style={{textDecorationColor:"white"}}>
+                            <Link href="/main" style={{ textDecorationColor: "white" }}>
                                 <Button
 
                                     onClick={handleCloseNavMenu}
@@ -150,7 +150,7 @@ function FooterPart() {
                             >
                                 Холбоо барих
                             </Button>
-                            <Link  href="/foodmenu" style={{textDecorationColor:"white"}}>
+                            <Link href="/foodmenu" style={{ textDecorationColor: "white" }}>
                                 <Button
 
                                     onClick={handleCloseNavMenu}
@@ -160,7 +160,7 @@ function FooterPart() {
                                     Хоолны цэс
                                 </Button>
                             </Link>
-                            <Link href="/terms&conditions"  style={{textDecorationColor:"white"}}>
+                            <Link href="/terms&conditions" style={{ textDecorationColor: "white" }}>
                                 <Button
 
                                     onClick={handleCloseNavMenu}
@@ -170,15 +170,17 @@ function FooterPart() {
                                     Үйлчилгээний нөхцөл
                                 </Button>
                             </Link>
-                            <Button
+                            <Link style={{ textDecorationColor: "white" }} href={"/delivery-area"}>
+                                <Button
 
-                                onClick={handleCloseNavMenu}
+                                    onClick={handleCloseNavMenu}
 
-                                sx={{ my: 2, color: 'white', display: 'block', }}
-                            >
-                                Хүргэлтийн бүс
-                            </Button>
-                            <Link href="/privacy"  style={{textDecorationColor:"white"}}>
+                                    sx={{ my: 2, color: 'white', display: 'block', }}
+                                >
+                                    Хүргэлтийн бүс
+                                </Button>
+                            </Link>
+                            <Link href="/privacy" style={{ textDecorationColor: "white" }}>
                                 <Button
 
                                     onClick={handleCloseNavMenu}
@@ -216,17 +218,5 @@ function FooterPart() {
 }
 export default FooterPart;
 
-{/* <Box gap={10} sx={{ flexGrow: 1, textUnderlinePosition:"auto", display: { xs: 'none', md: 'flex' } }}>
-{pages.map((page) => (
-    <Button
-        key={page}
-        onClick={handleCloseNavMenu}
-
-        sx={{ my: 2, color: 'white', display: 'block', }}
-    >
-        {page}
-    </Button>
-))}
 
 
-</Box> */}

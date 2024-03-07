@@ -1,22 +1,33 @@
 import { CustomInput } from "@/components";
-import ActionAreaCard from "@/components/CardCom";
+import ActionAreaCard from "@/components/card/CardCom";
 import FooterPart from "@/components/FooterPart";
 import Login from "@/components/Fullscreen";
 import ResponsiveAppBar from "@/components/HeaderPart1";
-import ResponsiveAppBar2 from "@/components/HeaderPart2";
+import ResponsiveAppBar2 from "@/components/headerparts/HeaderPart2";
 import { CloudQueue, Fullscreen, WidthFull } from "@mui/icons-material";
-import { Box, Button, CardActionArea, Container, Stack, Typography } from "@mui/material";
-import CloudQueueIcon from '@mui/icons-material/CloudQueue';
+import {
+  Box,
+  Button,
+  CardActionArea,
+  Container,
+  Stack,
+  Typography,
+} from "@mui/material";
+import CloudQueueIcon from "@mui/icons-material/CloudQueue";
 import Link from "next/link";
 import { Menu } from "@/components/Menu";
-Container
+import { AllFoods } from "@/components/foodcategory/Allfoods";
+Container;
 export default function FoodMenu() {
-    return (
-        <Stack gap={3} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
-            <ResponsiveAppBar />
+  return (
+    <Stack
+      gap={3}
+      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+    >
+      {/* <ResponsiveAppBar /> */}
 
-            <Stack gap={5} flexDirection={"row"} flexGrow={1}>
-                {/* <Link href="/main">
+      <Stack gap={5} flexDirection={"row"} flexGrow={1}>
+        {/* <Link href="/main">
                     <Button sx={{ width: "280.5px", h: "43px", border: 2, borderRadius: "16px", borderColor: "#D6D7DB" }}>
                         <Typography color={"black"} fontWeight={650}>Main course</Typography>
                     </Button>
@@ -30,11 +41,18 @@ export default function FoodMenu() {
                 <Button sx={{ width: "280.5px", h: "43px", border: 2, borderRadius: "16px", borderColor: "#D6D7DB" }}>
                     <Typography color={"black"} fontWeight={650}>On sale</Typography>
                 </Button> */}
-                <Menu/>
-            </Stack>
-            <Stack gap={3} sx={{ display: "flex", justifyContent: "center", alignItems: "center", p: "16px" }} >
-
-                <Stack gap={3} flexDirection={"row"}>
+        <Menu />
+      </Stack>
+      <Stack
+        gap={3}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          p: "16px",
+        }}
+      >
+        {/* <Stack gap={3} flexDirection={"row"}>
                     <ActionAreaCard></ActionAreaCard>
                     <ActionAreaCard></ActionAreaCard>
                     <ActionAreaCard></ActionAreaCard>
@@ -51,11 +69,11 @@ export default function FoodMenu() {
                     <ActionAreaCard></ActionAreaCard>
                     <ActionAreaCard></ActionAreaCard>
                     <ActionAreaCard></ActionAreaCard>
-                </Stack>
+                </Stack> */}
+        <AllFoods />
+      </Stack>
 
-            </Stack>
-
-            <FooterPart />
-        </Stack>
-    )
+      {/* <FooterPart /> */}
+    </Stack>
+  );
 }

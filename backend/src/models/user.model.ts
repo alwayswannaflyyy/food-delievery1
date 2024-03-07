@@ -8,9 +8,24 @@ const userSchema = new Schema({
   email: {
     type: String,
     required: true,
-    unique: true,
   },
   password: {
+    type: String,
+    required: true,
+  },
+  address: {
+    type: String,
+    required: true,
+  },
+  otp: {
+    type: String,
+    required: false,
+  },
+  updatedAtTime: {
+    type: String,
+    required: false,
+  },
+  role: {
     type: String,
     required: true,
   },

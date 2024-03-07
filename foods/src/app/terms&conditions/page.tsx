@@ -1,9 +1,9 @@
 import { CustomInput } from "@/components";
-import ActionAreaCard from "@/components/CardCom";
+import ActionAreaCard from "@/components/card/CardCom";
 import FooterPart from "@/components/FooterPart";
 import Login from "@/components/Fullscreen";
 import ResponsiveAppBar from "@/components/HeaderPart1";
-import ResponsiveAppBar2 from "@/components/HeaderPart2";
+import ResponsiveAppBar2 from "@/components/headerparts/HeaderPart2";
 import { CloudQueue, Fullscreen, WidthFull } from "@mui/icons-material";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
@@ -12,7 +12,7 @@ import { FoodSign } from "@/assets/FoodSign";
 export default function Terms() {
     return (
         <Stack gap={3} sx={{ display: "flex", justifyContent: "center", alignItems: "center", }} >
-            <ResponsiveAppBar />
+            {/* <ResponsiveAppBar /> */}
 
             {/* <Box sx={{ py: "16px", display: "flex", flexDirection: "column", gap: "5px", textAlign: "center", alignItems: "center" }}> */}
             <Container maxWidth="lg">
@@ -125,7 +125,7 @@ export default function Terms() {
                 </Stack>
             </Container>
             {/* </Box> */}
-            <FooterPart />
+            {/* <FooterPart /> */}
         </Stack>
     )
 }
